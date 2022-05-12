@@ -1,4 +1,4 @@
-module github.com/hhatto/gocloc
+module github.com/nicole01101101zke/gocloc
 
 go 1.12
 
