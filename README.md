@@ -1,10 +1,10 @@
 # gocloc
 
-[![GoDoc](https://godoc.org/github.com/hhatto/gocloc?status.svg)](https://godoc.org/github.com/hhatto/gocloc)
-[![ci](https://github.com/hhatto/gocloc/workflows/Go/badge.svg)](https://github.com/hhatto/gocloc/actions)
-[![Go Report Card](https://goreportcard.com/badge/github.com/hhatto/gocloc)](https://goreportcard.com/report/github.com/hhatto/gocloc)
-[![Docker Pulls](https://img.shields.io/docker/pulls/hhatto/gocloc)](https://hub.docker.com/r/hhatto/gocloc)
-[![Docker Image Size](https://img.shields.io/docker/image-size/hhatto/gocloc)](https://hub.docker.com/r/hhatto/gocloc)
+[![GoDoc](https://godoc.org/github.com/nicole01101101zke/gocloc?status.svg)](https://godoc.org/github.com/nicole01101101zke/gocloc)
+[![ci](https://github.com/nicole01101101zke/gocloc/workflows/Go/badge.svg)](https://github.com/nicole01101101zke/gocloc/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nicole01101101zke/gocloc)](https://goreportcard.com/report/github.com/nicole01101101zke/gocloc)
+[![Docker Pulls](https://img.shields.io/docker/pulls/nicole01101101zke/gocloc)](https://hub.docker.com/r/nicole01101101zke/gocloc)
+[![Docker Image Size](https://img.shields.io/docker/image-size/nicole01101101zke/gocloc)](https://hub.docker.com/r/nicole01101101zke/gocloc)
 
 A little fast [cloc(Count Lines Of Code)](https://github.com/AlDanial/cloc), written in Go.
 Inspired by [tokei](https://github.com/Aaronepower/tokei).
@@ -13,10 +13,10 @@ Inspired by [tokei](https://github.com/Aaronepower/tokei).
 
 ```
 # Go version >= 1.16
-$ go install github.com/hhatto/gocloc/cmd/gocloc@latest
+$ go install github.com/nicole01101101zke/gocloc/cmd/gocloc@latest
 
 # Go version < 1.16
-$ go get -u github.com/hhatto/gocloc/cmd/gocloc
+$ go get -u github.com/nicole01101101zke/gocloc/cmd/gocloc
 ```
 
 Arch Linux user can also install from AUR: [gocloc-git](https://aur.archlinux.org/packages/gocloc-git/).
@@ -41,12 +41,12 @@ TOTAL                            4             37              1            341
 ```
 
 ### Via Docker
-with [dockerhub](https://hub.docker.com/repository/docker/hhatto/gocloc)
+with [dockerhub](https://hub.docker.com/repository/docker/nicole01101101zke/gocloc)
 ```
-$ docker run --rm -v "${PWD}":/workdir hhatto/gocloc .
+$ docker run --rm -v "${PWD}":/workdir nicole01101101zke/gocloc .
 ```
 
-with [GitHub Packages](https://github.com/hhatto/gocloc/packages/350535) on GitHub Actions
+with [GitHub Packages](https://github.com/nicole01101101zke/gocloc/packages/350535) on GitHub Actions
 ```
 jobs:
   build:
@@ -59,7 +59,7 @@ jobs:
         run: docker login docker.pkg.github.com -u owner -p ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run gocloc
-        run: docker run --rm -v "${PWD}":/workdir docker.pkg.github.com/hhatto/gocloc/gocloc:latest .
+        run: docker run --rm -v "${PWD}":/workdir docker.pkg.github.com/nicole01101101zke/gocloc/gocloc:latest .
 ```
 
 ### Integration Jenkins CI
@@ -90,7 +90,7 @@ $ gocloc --show-lang
 * CPU 3.1GHz Intel Core i7 / 16GB 1600MHz DDR3 / MacOSX 10.11.3
 * cloc 1.66
 * tokei 1.5.1
-* gocloc [6a9d4f5](https://github.com/hhatto/gocloc/commit/6a9d4f5b3d4e5df28fe78a04e8741595e22ada50)
+* gocloc [6a9d4f5](https://github.com/nicole01101101zke/gocloc/commit/6a9d4f5b3d4e5df28fe78a04e8741595e22ada50)
 * target repository is [golang/go commit:633ab74](https://github.com/golang/go/tree/633ab7426a906b72dcf6f1d54e87f4ae926dc4e1)
 
 ### cloc
