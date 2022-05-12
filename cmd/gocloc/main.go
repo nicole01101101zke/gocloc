@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hhatto/gocloc"
+	"github.com/nicole01101101zke/gocloc"
 	flags "github.com/jessevdk/go-flags"
 )
 
