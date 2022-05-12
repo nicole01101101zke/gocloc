@@ -11,7 +11,7 @@ on:
 
 env:
   DOCKER_BASE_NAME: docker.pkg.github.com/${{ github.repository }}/gocloc
-  DOCKER_HUB_BASE_NAME: hhatto/gocloc
+  DOCKER_HUB_BASE_NAME: nicole01101101zke/gocloc
 
 jobs:
   lint:
@@ -52,8 +52,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
         run: |
-          echo "${GITHUB_TOKEN}" | docker login docker.pkg.github.com -u hhatto --password-stdin
-          echo "${DOCKER_HUB_TOKEN}" | docker login -u hhatto --password-stdin
+          echo "${GITHUB_TOKEN}" | docker login docker.pkg.github.com -u nicole01101101zke --password-stdin
+          echo "${DOCKER_HUB_TOKEN}" | docker login -u nicole01101101zke --password-stdin
       - name: Push to GitHub Packages
         if: github.event_name != 'pull_request'
         run: docker push "${PKG_TAG}"
